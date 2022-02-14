@@ -8,10 +8,10 @@
         <div class="col-lg-6 col-md-12 col-sm-12">
           <h5 class="title">周柯宇 Daniel Zhou</h5>
           <p>
-            <a class="chn-zh" href="https://weibo.com/p/1004062956384255"><i class="fab fa-weibo"></i>
+            <a class="chn-zh" href="https://weibo.com/u/2956384255" target="_blank"><i class="fab fa-weibo"></i>
             INTO1-周柯宇
             </a><br>
-            <a class="chn-zh" href="https://www.instagram.com/into1__daniel"><i class="fab fa-instagram"></i>
+            <a class="chn-zh" href="https://www.instagram.com/into1__daniel" target="_blank"><i class="fab fa-instagram"></i>
               into1__daniel
             </a>
           </p>
@@ -22,10 +22,10 @@
         <div class="col-lg-6 col-md-12 col-sm-12">
           <h5 class="title">尹浩宇 Patrick Nattawat Finkler</h5>
           <p>
-            <a class="chn-zh" href="https://weibo.com/u/7527950457"><i class="fab fa-weibo"></i>
+            <a class="chn-zh" href="https://weibo.com/u/7527950457" target="_blank"><i class="fab fa-weibo"></i>
               INTO1-尹浩宇
             </a><br>
-            <a class="chn-zh" href="https://www.instagram.com/into1__patrick"><i class="fab fa-instagram"></i>
+            <a class="chn-zh" href="https://www.instagram.com/into1__patrick" target="_blank"><i class="fab fa-instagram"></i>
               into1__patrick
             </a>
           </p>
@@ -470,12 +470,12 @@ export default {
     height: 200px;
     overflow: hidden;
   }
-  .card-nav-tabs {
+  #timeline .card-nav-tabs {
     position: relative;
     z-index: 10;
     margin: 10px;
   }
-  .card-nav-tabs .blockquote {
+  #timeline .card-nav-tabs .blockquote {
     position: relative;
     background-color: rgb(255, 255, 255, 0.85);
   }

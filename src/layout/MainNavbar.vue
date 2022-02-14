@@ -20,7 +20,9 @@
         <div class="popover-body chn">
           随缘更新，合作请联系
           <br>
-          <a href="https://weibo.com/5522260366/profile" target="_blank"><i class="fab fa-weibo"></i> 嘻嘻来巡山了</a>
+          <a href="https://weibo.com/5522260366/profile" target="_blank">
+            <i class="fab fa-weibo"></i> 嘻嘻来巡山了
+          </a>
         </div>
       </el-popover>
     </template>
