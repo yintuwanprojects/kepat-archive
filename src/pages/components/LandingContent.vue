@@ -1,5 +1,5 @@
 <template>
-  <div class="section section-basic" id="basic-elements">
+  <div class="section section-basic" id="timeline">
     <div class="container">
       <h3 class="title chn-zh">时间线</h3>
       <div class="section chuang txt-white blur"><span class="chn-zh text_bold">创造营2021</span></div>
@@ -439,11 +439,11 @@ export default {
   .chuang.blur:before {
     background-position-y: -90px;
   }
-  .card-nav-tabs {
+  #timeline .card-nav-tabs {
     position: absolute;
     z-index: 10;
   }
-  .card-nav-tabs .blockquote {
+  #timeline .card-nav-tabs .blockquote {
     position: relative;
     top: 400px;
     background-color: rgb(255, 255, 255, 0.85);

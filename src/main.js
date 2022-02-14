@@ -2,17 +2,13 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import NowUiKit from './plugins/now-ui-kit';
-import VueAnalytics from 'vue-analytics'
+import VueGtag from "vue-gtag";
 
 Vue.config.productionTip = false;
 
 Vue.use(NowUiKit);
-Vue.use(VueAnalytics, {
-  id: '303432459',
-  autoTracking: {
-    screenview: true
-  },
-  trackEvent: true
+Vue.use(VueGtag, {
+  config: { id: "G-E1NCFPX3LJ" }
 });
 
 new Vue({

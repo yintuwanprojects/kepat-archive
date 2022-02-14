@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "babel-eslint": "^10.1.0",
@@ -17,6 +18,7 @@
     "git": "^0.1.5",
     "nouislider": "^14.6.0",
     "vue": "^2.6.11",
+    "vue-gtag": "^1.16.1",
     "vue-lazy-load": "^0.0.7",
     "vue-lazyload": "^1.3.3",
     "vue-router": "^3.3.4",
@@ -29,7 +31,7 @@
     "babel-plugin-component": "^1.1.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
-    "vue-analytics": "^5.22.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "execa": "^4.1.0"
   }
 }

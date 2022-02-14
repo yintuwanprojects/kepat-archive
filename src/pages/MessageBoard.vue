@@ -19,12 +19,13 @@
     </div>
     <div class="section section-about-us">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="row" v-for="i in rowCount" :key="i">
+          <div v-for="(item, index) in messages.slice((i - 1) * itemsPerRow, i * itemsPerRow)" :key="index"
+               class="col-lg-4 col-md-6 col-sm-12 mt-2">
             <card class="card-nav-tabs" header-classes="card-header-success">
               <blockquote class="blockquote blockquote-primary mb-0">
-                <p>可爱的蛋挞皮们情人节快乐💜~可拍和大家都要好好的！</p>
-                <footer class="blockquote-footer">嘻嘻</footer>
+                <p>{{ item.body }}</p>
+                <footer class="blockquote-footer">{{ item.name }}</footer>
               </blockquote>
             </card>
           </div>
@@ -68,6 +69,7 @@
 </template>
 <script>
 import { Button, FormGroupInput } from '@/components';
+import messages from '../../public/static/messages.json'
 export default {
   name: 'landing',
   bodyClass: 'landing-page',
@@ -80,8 +82,18 @@ export default {
       form: {
         firstName: '',
         message: ''
-      }
+      },
+      windowWidth: window.innerWidth,
+      messages: messages
     };
+  },
+  computed:{
+    itemsPerRow() {
+      return (this.windowWidth >= 1080) ? 3 : (this.windowWidth >= 720) ? 2 : 1
+    },
+    rowCount() {
+      return Math.ceil(this.messages.length / this.itemsPerRow);
+    }
   },
   methods: {
     emailMessage: function () {
