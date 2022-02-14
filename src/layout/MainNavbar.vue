@@ -7,8 +7,8 @@
     menu-classes="ml-auto"
   >
     <template>
-      <router-link v-popover:popover1 class="navbar-brand" to="/">
-        Now Ui Kit
+      <router-link v-popover:popover1 class="navbar-brand chn-zh" to="/">
+        电台记事簿
       </router-link>
       <el-popover
         ref="popover1"
@@ -17,104 +17,47 @@
         width="200"
         trigger="hover"
       >
-        <div class="popover-body">
-          Designed by Invision. Coded by Creative Tim
+        <div class="popover-body chn">
+          随缘更新，合作请联系
+          <br>
+          <a href="https://weibo.com/5522260366/profile" target="_blank"><i class="fab fa-weibo"></i> 嘻嘻来巡山了</a>
         </div>
       </el-popover>
     </template>
     <template slot="navbar-menu">
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          href="https://www.creative-tim.com/product/vue-now-ui-kit"
-          target="_blank"
-        >
-          <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-          <p>Download</p>
-        </a>
+      <li class="nav-link nav-item">
+        <router-link to="/">
+          <i class="fas fa-home"></i> 回到主页
+        </router-link>
       </li>
       <drop-down
         tag="li"
-        title="Components"
-        icon="now-ui-icons design_app"
-        class="nav-item"
+        title="资源库"
+        icon="now-ui-icons files_box"
+        class="nav-item chn-zh"
       >
-        <nav-link to="/">
-          <i class="now-ui-icons business_chart-pie-36"></i> All components
+        <nav-link to="/resource">
+          <i class="now-ui-icons media-1_button-play"></i> 官方资源
         </nav-link>
-        <a
-          href="https://demos.creative-tim.com/vue-now-ui-kit/documentation"
-          target="_blank"
-          class="dropdown-item"
-        >
-          <i class="now-ui-icons design_bullet-list-67"></i> Documentation
-        </a>
+        <nav-link to="/fanbase">
+          <i class="now-ui-icons design_bullet-list-67"></i> 站姐列表
+        </nav-link>
       </drop-down>
       <drop-down
               tag="li"
-              title="Examples"
-              icon="now-ui-icons design_image"
-              class="nav-item"
+              title="糖点"
+              icon="now-ui-icons ui-2_favourite-28"
+              class="nav-item chn-zh"
       >
-        <nav-link to="/landing">
-          <i class="now-ui-icons education_paper"></i> Landing
+        <nav-link to="/interaction">
+          <i class="fab fa-weibo"></i> 社交平台互动
         </nav-link>
-        <nav-link to="/login">
-          <i class="now-ui-icons users_circle-08"></i> Login
-        </nav-link>
-        <nav-link to="/profile">
-          <i class="now-ui-icons users_single-02"></i> Profile
-        </nav-link>
-      </drop-down>
-      <li class="nav-item">
-        <a
-          class="nav-link btn btn-neutral"
-          href="https://www.creative-tim.com/product/vue-now-ui-kit-pro"
-          target="_blank"
-        >
-          <i class="now-ui-icons arrows-1_share-66"></i>
-          <p>Upgrade to PRO</p>
-        </a>
-      </li>
 
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          rel="tooltip"
-          title="Follow us on Twitter"
-          data-placement="bottom"
-          href="https://twitter.com/CreativeTim"
-          target="_blank"
-        >
-          <i class="fab fa-twitter"></i>
-          <p class="d-lg-none d-xl-none">Twitter</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          rel="tooltip"
-          title="Like us on Facebook"
-          data-placement="bottom"
-          href="https://www.facebook.com/CreativeTim"
-          target="_blank"
-        >
-          <i class="fab fa-facebook-square"></i>
-          <p class="d-lg-none d-xl-none">Facebook</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          rel="tooltip"
-          title="Follow us on Instagram"
-          data-placement="bottom"
-          href="https://www.instagram.com/CreativeTimOfficial"
-          target="_blank"
-        >
-          <i class="fab fa-instagram"></i>
-          <p class="d-lg-none d-xl-none">Instagram</p>
-        </a>
+      </drop-down>
+      <li class="nav-link nav-item">
+        <router-link to="/board">
+          <i class="now-ui-icons ui-2_chat-round"></i> 留言板
+        </router-link>
       </li>
     </template>
   </navbar>

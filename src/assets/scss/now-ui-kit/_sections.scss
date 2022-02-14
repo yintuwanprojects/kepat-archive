@@ -111,6 +111,12 @@
     &[filter-color="orange"]{
         @include linear-gradient(rgba($black-color,.20), rgba(224, 23, 3, 0.6));
     }
+    &[filter-color="purple"]{
+      @include linear-gradient(rgba($black-color,.20), rgba(20, 5, 114, 0.6));
+    }
+    &[filter-color="yellow"]{
+      @include linear-gradient(rgba($black-color,.20), rgba(253, 164, 7, 0.76));
+    }
 }
 
 .section-story-overview{

@@ -159,3 +159,24 @@ p{
         }
     }
 }
+
+@font-face {
+    font-family: 'Shang Shou Jian Hei';
+    src:url('../fonts/ShangShouJianHei.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Shang Shou Jian Hei Zhong';
+    src:url('../fonts/ShangShouJianHeiZhong.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.chn {
+    font-family: "Shang Shou Jian Hei", sans-serif;
+}
+
+.chn-zh {
+    font-family: "Shang Shou Jian Hei Zhong", sans-serif;
+}

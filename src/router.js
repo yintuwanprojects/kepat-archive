@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Index from './pages/Index.vue';
-import Landing from './pages/Landing.vue';
-import Login from './pages/Login.vue';
-import Profile from './pages/Profile.vue';
+import MessageBoard from './pages/MessageBoard.vue';
+import Resource from './pages/InConstruction.vue';
 import MainNavbar from './layout/MainNavbar.vue';
 import MainFooter from './layout/MainFooter.vue';
+import InConstruction from "@/pages/InConstruction";
 
 Vue.use(Router);
 
@@ -22,26 +22,36 @@ export default new Router({
       }
     },
     {
-      path: '/landing',
-      name: 'landing',
-      components: { default: Landing, header: MainNavbar, footer: MainFooter },
+      path: '/board',
+      name: 'board',
+      components: { default: MessageBoard, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: 'black' }
       }
     },
     {
-      path: '/login',
-      name: 'login',
-      components: { default: Login, header: MainNavbar },
+      path: '/fanbase',
+      name: 'fanbase',
+      components: { default: InConstruction, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 }
+        header: { colorOnScroll: 400 },
+        footer: { backgroundColor: 'black' }
       }
     },
     {
-      path: '/profile',
-      name: 'profile',
-      components: { default: Profile, header: MainNavbar, footer: MainFooter },
+      path: '/resource',
+      name: 'resource',
+      components: { default: InConstruction, header: MainNavbar, footer: MainFooter },
+      props: {
+        header: { colorOnScroll: 400 },
+        footer: { backgroundColor: 'black' }
+      }
+    },
+    {
+      path: '/interaction',
+      name: 'interaction',
+      components: { default: InConstruction, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: 'black' }

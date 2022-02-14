@@ -504,3 +504,9 @@
     display: none !important;
   }
 }
+
+.blur h3, .blur h4, .blur span, .blur p {
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(4px 4px 6px black);
+}
